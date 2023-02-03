@@ -20,15 +20,24 @@ It doesn't matter what you leave beyond the returned length. For example if you 
 or nums = [2,3,0,0], your answer will be accepted.
 */
 
+/*
+## Approach
+
+We will follow below steps —
+
+Take a variable count. This will count the number of elements except val.
+Scan the array left to right.
+If the current element is not equal to val, we will add that element to the place of count.
+*/
 package removeelement
 
 func RemoveElement(nums []int, val int) int {
 	x := 0
 	for i := 0; i < len(nums); i++ {
 		if nums[i] != val {
-			if x != i {
-				nums[x] = nums[i]
-			}
+			// if x != i {
+			nums[x] = nums[i]
+			// }
 			x++
 		}
 	}
