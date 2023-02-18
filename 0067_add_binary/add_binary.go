@@ -44,7 +44,7 @@ func addBinary(a string, b string) string {
 	}
 	if lenB == 0 {
 		for lenA > 0 {
-			tmp := int(a[lenA-1]-'0') + carry
+			tmp := int(b[lenA-1]-'0') + carry
 			res = strconv.Itoa(tmp%2) + res
 			carry = tmp / 2
 			lenA--
