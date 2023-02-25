@@ -23,4 +23,7 @@ func Test_climbStairs(t *testing.T) {
 	if steps := climbStairs(34); steps != 9227465 {
 		t.Errorf("expected %d, got %d", 9227465, steps)
 	}
+	if steps := climbStairs(45); steps != 1836311903 {
+		t.Errorf("expected %d, got %d", 1836311903, steps)
+	}
 }
